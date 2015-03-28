@@ -1,0 +1,41 @@
+{
+    "name": "dafiti/solarium-service-provider",
+    "description": "A Silex Service Provider for Solarium",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "silex",
+        "solarium",
+        "solr",
+        "dafiti"
+    ],
+    "authors": [
+        {
+            "name": "Fabio da Silva Ribeiro",
+            "email": "silva.ribeiro@dafiti.com.br"
+        }
+    ],
+    "support": {
+        "issue": "https://github.com/dafiti/solarium-service-provider/issues"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "silex/silex": "~1.1",
+        "solarium/solarium": "~3.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "fabpot/php-cs-fixer": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Service\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Service\\": "tests/"
+        }
+    }
+}
