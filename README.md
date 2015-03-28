@@ -1,1 +1,2 @@
-# solarium-service-provider
+# SolariumServiceProvider
+A Silex Service Provider for Solarium
