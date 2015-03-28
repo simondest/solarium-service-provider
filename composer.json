@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Service\\": "src/"
+            "Dafiti\\Silex\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Service\\": "tests/"
+            "Dafiti\\Silex\\": "tests/"
         }
     }
 }
