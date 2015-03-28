@@ -1,15 +1,15 @@
 <?php
 
-namespace Service\Provider;
+namespace Dafiti\Silex;
 
 use Silex\Application;
 
-class SolariumTest extends \PHPUnit_Framework_TestCase
+class SolariumServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
     public function testShouldRegister()
     {
         $app = new Application();
-        $app->register(new Solarium());
+        $app->register(new SolariumServiceProvider());
 
         $this->assertInstanceOf('\Solarium\Client', $app['solarium']);
     }
@@ -30,7 +30,7 @@ class SolariumTest extends \PHPUnit_Framework_TestCase
         ];
 
         $app = new Application();
-        $app->register(new Solarium(), $params);
+        $app->register(new SolariumServiceProvider(), $params);
 
         $expected = $params['solarium.config']['endpoint']['localhost'];
         $result   = $app['solarium']->getEndpoint('localhost');

@@ -1,12 +1,12 @@
 <?php
 
-namespace Service\Provider;
+namespace Dafiti\Silex;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 use Solarium\Client;
 
-class Solarium implements ServiceProviderInterface
+class SolariumServiceProvider implements ServiceProviderInterface
 {
     /**
      * @var string
